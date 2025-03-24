@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Delicious Bites</h2>
+        <p>Enjoy the best food in town!</p>
+        <button onclick="scrollToMenu()">View Menu</button>
+    </section>
+
+    <section id="menu" class="reveal">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item reveal">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious cheesy pizza</p>
+                <span>120</span>
+            </div>
+            <div class="menu-item reveal">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy beef burger</p>
+                <span>$10</span>
+            </div>
+            <div class="menu-item reveal">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Creamy Alfredo pasta</p>
+                <span>$15</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
